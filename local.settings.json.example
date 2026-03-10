@@ -1,0 +1,19 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "FUNCTIONS_NODE_BLOCK_ON_ENTRY_POINT_ERROR": "true",
+
+    "TASK_HUB_NAME": "raahtech",
+    "DURABLE_TASK_SCHEDULER_ENDPOINT": "https://<scheduler-name>.<region>.durabletask.io",
+    "DURABLE_TASK_SCHEDULER_CONNECTION": "DefaultEndpointsProtocol=https;...",
+
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "<your-app-insights-key>",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=<key>;...",
+
+    "NODE_ENV": "development",
+    "API_VERSION": "1.0.0",
+    "LOG_LEVEL": "debug"
+  }
+}
