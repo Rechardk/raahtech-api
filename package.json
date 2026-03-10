@@ -1,0 +1,21 @@
+{
+  "name": "raahtech-api",
+  "version": "1.0.0",
+  "description": "Raahtech Azure Functions API — Node.js 22, Azure Functions v4, Flex Consumption, Durable Task Scheduler",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "func start",
+    "test": "node --test src/**/*.test.js",
+    "lint": "eslint src/"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.5.0",
+    "durable-functions": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.21.0"
+  }
+}

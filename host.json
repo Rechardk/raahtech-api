@@ -1,0 +1,33 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    },
+    "logLevel": {
+      "default": "Information",
+      "Host.Results": "Error",
+      "Function": "Information",
+      "Host.Aggregator": "Trace"
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.*, 5.0.0)"
+  },
+  "extensions": {
+    "durableTask": {
+      "hubName": "%TASK_HUB_NAME%",
+      "storageProvider": {
+        "type": "azureManagedDurableTaskScheduler",
+        "schedulerEndpoint": "%DURABLE_TASK_SCHEDULER_ENDPOINT%",
+        "taskHubName": "%TASK_HUB_NAME%",
+        "connectionName": "DURABLE_TASK_SCHEDULER_CONNECTION"
+      }
+    }
+  },
+  "functionTimeout": "00:10:00"
+}
