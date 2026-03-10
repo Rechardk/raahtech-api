@@ -12,7 +12,7 @@
 'use strict';
 
 const df     = require('durable-functions');
-const logger = require('../utils/logger');
+const logger = require('../../utils/logger');
 
 df.app.activity('raahActivity', {
   handler: async (input, context) => {

@@ -10,8 +10,8 @@
 'use strict';
 
 const { app } = require('@azure/functions');
-const logger   = require('../utils/logger');
-const { config } = require('../utils/env');
+const logger   = require('../../utils/logger');
+const { config } = require('../../utils/env');
 
 app.http('version', {
   methods:   ['GET'],
